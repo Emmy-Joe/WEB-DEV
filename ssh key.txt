@@ -1,0 +1,21 @@
+Your identification has been saved in C:\Users\ochig/.ssh/id_rsa.
+Your public key has been saved in C:\Users\ochig/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:DWyK1aHeboXwDY0M/u7OIFX5bmPiMQUU1uRrHhk4APw ochigboje@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   ...o =+.      |
+|    .. X B.      |
+|     .= # +      |
+|     +EO X +     |
+|    . + S @      |
+|     . o * .     |
+|    . . B *      |
+|     . * * .     |
+|       .=        |
++----[SHA256]-----+
+
+ssh-keygen -t rsa -b 4096 -C "ochigboje@gmail.com"
+
+git remote set-url origin git@github.com:Emmy-Joe/Web-Dev.git
+

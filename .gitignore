@@ -1,5 +1,6 @@
 #mp4 files
 .mp4
+.txt
 
 # Dependency directories
 node_modules/
