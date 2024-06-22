@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> CRYSTALLINK TUTORIALS AND TECHNOLOGY - Kubwa Abuja | 2024 WAEC/NECO GCE Registration/Tutorials | Coding Classes | Website Development Services</title>
+    <link rel="shortcut icon" type="image/png" href="image/clt-logo-row.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website Coding Classes | 2024 WAEC/NECO GCE Registration/Tutorials Center in Abuja"/>
+    <meta name="keywords" content="Coding, Tutorials, WAEC, NECO, GCE, Registration, Technology, Abuja, ICT, Programming, Digital Skills, Website Development, CBT, Holiday Lessons">
+    <meta name="author" content="CRYSTALLINK TUTORIALS AND TECHNOLOGY">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="custom_alert/custom-alert.css">
+    <link rel="stylesheet" href="css/navbar-vb.css">
+    
+
+
+<style>
+  #more1 {
+    display: none;
+    }
+
+ 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 45px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1de4bcde; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+  
+
+
+@media (max-width: 767px) {
+    /* Apply spacing between buttons for screens with a max-width of 767px (adjust as needed) */
+    .btn {
+      margin-bottom: 10px; /* You can adjust the value to control the spacing */
+    }
+  }
+</style>
+    
+  </head>
+
+
+  
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  
+  <div class="site-wrap">
+
+    
+    <!--CUSTOM ALERT-->
+    <div id="custom-alert-overlay">
+      <div id="custom-alert">
+        <div id="custom-alert-content">
+          <h2 id="custom-alert-title">2024 WAEC GCE (AUG/SEP)</h2>
+          <p id="custom-alert-message"></p>
+  
+          <a href="https://wa.me/2347089111115" target="blank"> 
+          <button class="btn" >WhatsApp </button> </a>
+  
+          <a href="tel://+234 806 720 7668">
+          <button class="btn">Call Us</button></a>
+  
+          <a href="blog.html" target="_blank">
+            <button class="btn">More Info</button></a>
+          
+          <button class="btn" onclick="hideCustomAlert()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = ()=>{
+        setTimeout(showCustomAlert, 15000);
+      }
+    </script>
+
+    <!--Custom Alert Ends-->
+
+    
+   
+    <div class="border-bottom top-bar py-2 bg-dark" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              
+              <span class="mr-3"><strong id="call" class="text-white"><i class="icon-envelope-o" style="font-size:15px;color:white"></i></strong><a href="mailto:info@crystallink.org"> info@crystallink.org</a></span>
+              <span class="mr-3"><strong id="call" class="text-white"><i class="icon-whatsapp" style="font-size:15px;color:white"></i></strong> <a href="https://wa.me/2347089111115" target="blank">+234 708 911 1115 </a></span>
+              <span class="mr-3"><strong id="call" class="text-white"> <span class="icon-phone2"> </strong> <a href="tel://+234 806 720 7668">+234 806 720 7668</a></span>
+              </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/101255061415133" target="blank" class="p-2"><span class="icon-facebook"></span></a></li>
+              <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
+              <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
+              <li  style="font-size: 12px;color:white" > BN 2850285</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+<header class="js-sticky-header">    
+<nav>
+    <ul class="sidebar">
+        <li onclick="hideSideBar()"><a><img src="img/icons/close_icon.png" height="26" width="26" alt=""></a></li>
+        <li><a href="#home-section" >Home</a></li>
+        <li><a href="#services-section">Services</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="blog.php" target="_blank">Blog</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+        
+        
+    </ul>
+
+    <ul>
+        <li><a href="#"><img src="img/icons/clt-logo-row.png" height="30" width="auto" alt=""> <h1 id="caption"><b id="caption1">CRYSTAL</b><b id="caption2">LINK</b>&bullet;</h1></a></li>
+        <li class="hideOnMobile"><a href="#home-section" class="nav-link">Home</a></li>
+        <li class="hideOnMobile"><a href="#services-section" class="nav-link">Services</a></li>
+        <li class="hideOnMobile">
+          <a href="#about-section" class="nav-link">About</a>
+        </li>
+        <li class="hideOnMobile"><a href="blog.php" target="_blank" class="nav-link">Blog</a></li>
+        <li class="hideOnMobile"><a href="#contact-section" class="nav-link">Contact</a></li>
+        <li class="showOnMobile" onclick="showSideBar()"><a><img src="img/icons/menu_icon.png" height="26" width="26" alt=""></a></li>
+    </ul>
+</nav>
+
+</header>
+
+
+
+<div class="background-video">
+  <video autoplay muted loop id="bg-video">
+      <source src="img/bgv-lecture.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <div class="content">
+      <!-- Add more content here to make the page scrollable -->
+
+  
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+                 <!--Text above type-word-->       
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-8 text-center">
+                <h2 style="color: rgb(64, 200, 227);"> <span style="color: whitesmoke;" class="|">|</span> TUTORIALS <span style="color: whitesmoke;" class="">&</span> TECHNOLOGY <span style="color: whitesmoke;" class="|">|</span></h2>
+                <br> 
+                <h2><span style="color: lightgoldenrodyellow;" class="typed-words"></span></h2>
+                <br>
+              
+                  <address>
+                    <p class="lead"> <u>Contact Us for a New Experience</u> </p>
+                    <font color="whitesmoke" size="4" face="verdana"> Plot 1, Simon Onuh Close (Beside Mountain of Fire Church), Shelter-Farm Road (close to Liberty Junction), Byazhin, Kubwa - Abuja, Nigeria.</font>
+                  </address>
+              
+                <br>
+                <div><a href="tel://+234 806 720 7668" class="btn btn-primary btn-md" >CALL US NOW</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+    
+<div style="text-align: center; color:brown; font-size: 22px"> <mark title="WAEC for Private Candidates - 2024 Second Series">2024 WAEC/NECO GCE</mark>...  
+  <b style="color: deepskyblue; font-size: 20px; padding: 0px 10px 0px 0px; "><a
+      href="https://wa.me/2347089111115" target="blank"> Contact Us for Registration/Tutorials </a></b> </div>
+<br>
+
+<marquee loop="-1" scrollamount="5"  behavior="alternate"  bgcolor="whitesmoke" width="80%" height="30px" style="color: deepskyblue; font-size:20px; margin-left: 10%"><mark>Education is a Great Investment... </mark>  Enroll Your Child in Our 2024 SSCE/Holiday Lessons & Coding Class <mark>  ...you'll definitely be glad you did!!</mark></marquee>
+
+
+    
+
+
+    <section class="site-section" id="services-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-black h1 site-section-heading text-center">Our Services</h2>
+            <p class="lead"> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">01.</div>
+              <h2 class="text-primary">Tutorial Services</h2>
+              <p class="mb-4">We offer top-notch Tutorials and related services geared toward 
+                ensuring your academic success. Our Training/Coaching Services include, but not limited to:</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>WAEC, NECO And JAMB Examination Coaching</li>
+                <li>Home/Private Lesson</li>
+                <li>Holiday/Summer Lesson</li>
+                <li>Post-UTME/Entrance Examination Lessons</li>
+                <li>CBT Coaching</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">02.</div>
+              <h2 class="text-primary">Tech Services/Training</h2>
+              <p class="mb-4">World-class Innovation with state of the arts technologies.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>Website Development/Hosting</li>
+                <li>Data Analytics</li>
+                <li>Back-End Programming</li>
+                <li>Mobil App Development</li>
+                <li>Graphics Design</li>
+                <li>Computer Programming</li>
+                <li>Computer Appreciation/Application Packages</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">03.</div>
+              <h2 class="text-primary">Registration Services</h2>
+              <p class="mb-4">Crystallink is a Registration Center/Agent approved by WAEC and NECO for the Registration of GCE (SSCE for Private Candidates). We also offer all online Registration Services</p>
+              <ul class="list-unstyled ul-check primary">
+              <li>WAEC/NECO SSCE Registration for Private Candidates (GCE)</li>
+              <li>JAMB-UTME/Post-UTME Registration</li>
+              <li>NYSC Online Registration</li>
+              <li>Online Job Applications</li>
+              <li>Processing of documents and CV</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+   <!-- Blog SECTION-->
+
+
+   
+<!--ABOUT SECTION-->
+
+<section class="site-section" id="about-section">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="text-black h1 site-section-heading text-center">About Us</h2>
+        <hr>
+        <p class="lead"> &blacktriangleright; <b>We Are Glad To Have You Here</b> &blacktriangleleft; </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 box-with-humber">
+          <div class="number-behind">03.</div>
+          <h2 class="text-primary">Who We Are</h2>
+          <p class="mb-4">
+            <b>Crystallink Tutorials and Technologies</b>, registered by the Nigerian Government, has been delivering top-notch educational services since January 2016. Our students have excelled, with many attending prestigious institutions in Nigeria and abroad. We follow the latest JAMB and WAEC syllabuses and the approved Senior secondary school curriculum, ensuring quality education with experienced Teachers.
+ <p>           
+Our comprehensive classroom tutorials which cover all JAMB and WAEC subjects, holds in a conducive learning environment at our center. Additionally, our Skills acquisition program equip young individuals to be self-reliant and financially independent as they transition to higher education.
+</p>
+<p>
+We offer well-organized, intensive online tutorials and face-to-face sessions. We also provide practical hands-on digital skills training in computer programming, website development, data analysis, and more. Furthermore, <mark>we develop and host stunning, responsive, and SEO-optimized websites for clients, from simple sites to complex web apps.</mark>
+</p> </p>
+         
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 box-with-humber">
+          <div class="number-behind">01.</div>
+          <h2 class="text-primary">Our Mission</h2>
+          <p class="mb-4">At the heart of <b>Crystallink</b> is our unwavering mission:</p>
+          <ul class="list-unstyled ul-check primary"> 
+            <li>To draw people to the righteousness of God and to enjoy 
+              the benefits of living a righteous life in accordance with the promises of God – the Almighty. <br>
+              Also, to earnestly contend for the faith which was once delivered unto the saints [Jude 1:3].
+            </li>
+            <li> To foster a holistic and well-rounded education that goes beyond academics,  
+              emphasizing the development of moral, ethical, and educational values in students. This mission imposes a  
+              commitment to nurturing not only intellectual growth but also the character and ethical foundation of individuals.</li>
+          </ul>
+            
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 box-with-humber">
+          <div class="number-behind">02.</div>
+          <h2 class="text-primary">Our Fellowship</h2>
+          <p class="mb-4"> 
+           At Christlink Fellowship, we are committed to bridging the gap between people and the righteousness of God, 
+           helping individuals of all backgrounds and denominations to experience the fullness of a righteous life.
+          </p>
+          <p>With the guidance of the Holy Spirit, CHRISTLINK FELLOWSHIP has reached nearly one million people in 
+            the last five years, primarily focusing on youths preparing for JAMB/SSCE exams and campus students. 
+            This achievement is a result of our collaboration with 
+            <a href="https://clt.com.ng/" target="_blank">Crystallink Tutorials And Skills</a>, a partner organization, 
+            and we give all thanks to God for our success thus far.</p> 
+            <p><a href="https://fellowship.crystallink.org/" target="_blank"><b>Please Click Here to Visit Our Fellowship Page</b></a></p>           
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   
+
+    <!--WORK AREA-->
+
+
+    
+    <section class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="text-black h1 site-section-heading">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold"> Address <span class="icon-map-marker"></span></p>
+              <p class="mb-4"> Plot 1, Simon Onuh Close (Beside Mountain of Fire Church), Shelter-Farm Road (close to Liberty Junction), Byazhin, Kubwa - Abuja, Nigeria.</p>
+               
+              <p class="mb-0 font-weight-bold">Phone <span class="icon-phone2"></span></p>
+              <p class="mb-4"><a href="tel://+234 806 720 7668">+234 806 720 7668</a></p>
+    
+              <p class="mb-0 font-weight-bold">WhatsApp <span class="icon-whatsapp"></span></p>
+    
+              <p class="mb-4"><a href="https://wa.me/2347089111115" target="blank">0708 911 1115</a></p>
+    
+              <p class="mb-0 font-weight-bold">Email Address <span class="icon-envelope-o">
+    
+                </span></p>
+              <p class="mb-0"><a href="mailto:info@crystallink.org">info@crystallink.org</a></p>
+    
+            </div>
+    
+          </div>
+
+          <div class="col-md-7 mb-5">
+
+              <form id="contactForm" class="p-5 bg-white">
+                  <h2 class="h4 text-black mb-5">Contact Form</h2> 
+                
+                  <div class="row form-group">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label class="text-black" for="fname">First Name</label>
+                      <input type="text" id="fname" name="fname" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="text-black" for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lname" class="form-control">
+                    </div>
+                  </div>
+                
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                      <label class="text-black" for="email">Email</label> 
+                      <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                  </div>
+                
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                      <label class="text-black" for="subject">Subject</label> 
+                      <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+                  </div>
+                
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                      <label class="text-black" for="message">Message</label> 
+                      <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+                  </div>
+                
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                      <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                    </div>
+                      <p id="error-output" style="color: red;"></p>
+                  </div>
+                </form>        
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-11">
+      <div class="row justify-content-center">
+        <a href="tel://+234 806 720 7668" class="btn btn-primary btn-md" class="bg-primary py-5 d-block">
+          <h2 class="text-white icon-phone2">  Let's Get Started</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="footer-heading mb-4">About Us</h2>
+            <p class="mb-4">
+              <b>Crystallink Tutorials and Technologies</b>, registered by the Nigerian Government, 
+              has been delivering top-notch educational services since January 2016. Our students have excelled, 
+              with many attending prestigious institutions in Nigeria and abroad. We follow the latest JAMB and 
+              WAEC syllabuses and the approved Senior secondary school curriculum, ensuring quality education 
+              with experienced Teachers.
+            </p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading mb-4">Features</h2>
+            <ul class="list-unstyled">
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#services-section">Services</a></li>
+               <!--
+              <li><a href="">Testimonials</a></li>
+              -->
+              <li><a href="#contact-section">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Follow Us</h2>
+            <a href="https://wa.me/2347089111115" target="blank" class="pl-3 pr-3"><span class="fa fa-whatsapp"
+                style="font-size:30px;"></span></a>
+            <a href="https://www.facebook.com/101255061415133" target="blank" class="pl-0 pr-3"><span
+                class="icon-facebook" style="font-size:30px;"></span></a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+        <form action="#" method="post">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control border-secondary text-white bg-transparent"
+              placeholder="Will be available soon!" aria-label="Enter Email" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <div class="border-top pt-5">
+          <p>
+           
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> CRYSTALLINK | Registered Business No:
+            2850285 | Site Design: <a href="https://clt.com.ng" target="_blank">CRYSTALLINK</a> 
+           
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</div> <!-- .site-wrap -->
+
+  <script src="custom_alert/custom-alert.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+ 
+  <!--CONTACT FORM-->
+  <script src="js/forms.js"></script>
+
+
+  <!--NAV BAR JS CODE-->
+  <script>
+    function hideSideBar() {
+        document.querySelector('.sidebar').style.display = 'none';
+    }
+
+    function showSideBar() {
+        document.querySelector('.sidebar').style.display = 'block';
+    }
+
+    window.addEventListener('click', function(event) {
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar.style.display === 'block' && !event.target.closest('.showOnMobile')){
+            hideSideBar();
+        }
+    });
+    //use the below if statement if you want the side bar to close on clicking ONLY the outside window
+    // if (sidebar.style.display === 'block' && !sidebar.contains(event.target) && !event.target.closest('.showOnMobile'))
+</script>
+
+
+
+<script src="js/typed.js"></script>
+<script>
+  var typed = new Typed('.typed-words', {
+    strings: ["CODING CLASSES","2024 SSCE/GCE Tutorials", "Website Development Services", "WAEC/NECO GCE Registration", "ICT Coaching", "Programming with Python", "Skills Acquisition/Training", "Website Development Services"],
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 4000,
+    startDelay: 1000,
+    loop: true,
+    showCursor: true
+  });
+</script>
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <span class="text-secondary icon-arrow-up">UP</span></button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("myBtn").style.display = "block";
+	} else {
+		document.getElementById("myBtn").style.display = "none";
+	}
+}
+
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
+
+</body>
+
+</html>
+
+

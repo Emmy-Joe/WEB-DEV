@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="custom-alert.css">
+</head>
+<body onload="showCustomAlert()">
+  <!--
+  <button onclick="showCustomAlert()">Show Custom Alert</button>
+  -->
+  
+  <div id="custom-alert-overlay">
+    <div id="custom-alert">
+      <div id="custom-alert-content">
+        <h2 id="custom-alert-title">WAEC GCE 2023 (AUG/SEP))</h2>
+        <p id="custom-alert-message"></p>
+
+        <a href="https://wa.me/2347089111115" target="blank"> 
+        <button class="btn" >WhatsApp </button> </a>
+
+        <a href="tel://+234 806 720 7668">
+        <button class="btn">Call Us</button></a>
+
+        <a href="blog.html" target="_blank">
+          <button class="btn">More Info</button></a>
+        
+        <button class="btn" onclick="hideCustomAlert()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="custom-alert.js"></script>
+</body>
+</html>

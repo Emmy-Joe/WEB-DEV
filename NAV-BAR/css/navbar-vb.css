@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BACKGROUND VIDEO*/
+
+
+.background-video {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 50px; /* Adjust this based on the height of your navbar */
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%; /* Adjust this based on the height of your navbar */
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: blur(2px); /* Apply blur to the video */
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    z-index: 1;
+}
+
+
+
+
+
+/*NAVBAR SECTION*/
+
+
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+nav ul{
+    width:  100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background: lightgrey;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.528);
+    backdrop-filter: blur(10px);
+    box-shadow: -10 0 10 rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media (min-width: 800px){
+    .showOnMobile{
+        display: none;
+    }
+}
+    
+@media(max-width: 400px){
+    .sidebar{
+        width: 80%;
+    }
+}
+
+
+
+
+
+#caption{
+    color: darkslateblue;
+}
+
+#caption1{
+    color: darkslateblue;
+}
+
+#caption2{
+    color: rgb(64, 200, 227);
+}
+
+

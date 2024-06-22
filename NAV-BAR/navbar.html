@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> navbar-test | Coding Classes | 2024 WAEC/NECO GCE Registration/Tutorials</title>
+    <link rel="shortcut icon" type="image" href="images/clt-logo-row.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website Coding Classes | 2024 WAEC/NECO GCE Registration/Tutorials Center in Abuja"/>
+
+    <link rel="stylesheet" href="css/navbar-vb.css">
+</head>
+<body>
+    <div id="nav-bar">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><img src="img/icons/close_icon.png" height="26" width="26" alt=""></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Web Dev</a></li>
+                <li><a href="#">Trainings</a></li>
+                <li><a href="#">Exams</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="img/icons/clt-logo-row.png" height="30" width="auto" alt=""> <h1 id="caption"><b id="caption1">CRYSTAL</b><b id="caption2">LINK</b>&bullet;</h1></a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Web Dev</a></li>
+                <li class="hideOnMobile"><a href="#">Trainings</a></li>
+                <li class="hideOnMobile"><a href="#">Exams</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="showOnMobile" onclick="showSideBar()"><a href="#"><img src="img/icons/menu_icon.png" height="26" width="26" alt=""></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="main">
+        <section class="content">
+            <div>
+                <h2>MY SECTION 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rem repellendus, ut qui enim fuga nesciunt saepe tenetur, facere ex atque velit consectetur, earum suscipit reiciendis in. Repellendus, non adipisci!</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function hideSideBar() {
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+
+        function showSideBar() {
+            document.querySelector('.sidebar').style.display = 'block';
+        }
+
+        window.addEventListener('click', function(event) {
+            const sidebar = document.querySelector('.sidebar');
+            if (sidebar.style.display === 'block' && !sidebar.contains(event.target) && !event.target.closest('.showOnMobile')){
+                hideSideBar();
+            }
+        });
+    </script>
+</body>
+</html>
