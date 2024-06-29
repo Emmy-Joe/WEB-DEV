@@ -1,0 +1,129 @@
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="footer-heading mb-4">About Us</h2>
+            <p>Welcome to <b>Christlink Interdenominational Fellowship</b>, a vibrant and inclusive community dedicated to the
+               pursuit of righteousness and the abundant life promised in Matthew 6:33. <br> 
+               At Christlink, we are committed to bridging the gap between people and the righteousness of God, helping individuals
+               of all backgrounds and denominations experience the fullness of a righteous life.</p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading mb-4">Features</h2>
+            <ul class="list-unstyled">
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#services-section">About Us</a></li>
+               <!--
+              <li><a href="">Testimonials</a></li>
+              -->
+              <li><a href="#contact-section">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Follow Us</h2>
+            <a href="https://chat.whatsapp.com/BdWVas7RUUTATBmbUWNEsJ" target="blank" class="pl-3 pr-3"><span class="fa fa-whatsapp"
+                style="font-size:30px;"></span></a>
+            <a href="" target="blank" class="pl-0 pr-3"><span
+                class="icon-facebook" style="font-size:30px;"></span></a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+        <form action="#" method="post">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control border-secondary text-white bg-transparent"
+              placeholder="Will be available soon!" aria-label="Enter Email" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <div class="border-top pt-5">
+          <p>
+           
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> CHRISTLINK FELLOWSHIP | Site Design: <a href="https://clt.com.ng" target="_blank">Crystallink Digital Technologies</a> 
+           
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</div> <!-- .site-wrap -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+
+
+  
+  <!--NAV BAR JS CODE-->
+  <script>
+    function hideSideBar() {
+        document.querySelector('.sidebar').style.display = 'none';
+    }
+
+    function showSideBar() {
+        document.querySelector('.sidebar').style.display = 'block';
+    }
+
+    window.addEventListener('click', function(event) {
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar.style.display === 'block' && !event.target.closest('.showOnMobile')){
+            hideSideBar();
+        }
+    });
+    //use the below if statement if you want the side bar to close on clicking ONLY the outside window
+    // if (sidebar.style.display === 'block' && !sidebar.contains(event.target) && !event.target.closest('.showOnMobile'))
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <span class="text-secondary icon-arrow-up">UP</span></span> </button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("myBtn").style.display = "block";
+	} else {
+		document.getElementById("myBtn").style.display = "none";
+	}
+}
+
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+
+</html>
+

@@ -63,7 +63,7 @@ include("header.html");
             <div class="row justify-content-center mb-4">
               <div class="col-md-8 text-center">
                 <h1>Unlocking Success with WAEC GCE</h1>
-                <p class="lead">September 07, 2023 &bullet; <em>by</em> Emmanuel Joseph</p>
+                <p class="lead">June 23, 2024 &bullet; <em>by</em> Emmanuel Joseph</p>
               </div>
             </div>
           </div>

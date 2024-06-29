@@ -19,3 +19,9 @@ ssh-keygen -t rsa -b 4096 -C "ochigboje@gmail.com"
 
 git remote set-url origin git@github.com:Emmy-Joe/Web-Dev.git
 
+
+
+Congratulations, the software was installed successfully
+WordPress has been successfully installed at :
+https://clt.com.ng/wp
+Administrative URL : https://clt.com.ng/wp/wp-admin/
