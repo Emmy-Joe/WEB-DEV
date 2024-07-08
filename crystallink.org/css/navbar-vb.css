@@ -1,12 +1,10 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
 
 /*BACKGROUND VIDEO*/
-
-
 .background-video {
     position: relative;
     height: 90vh;
@@ -37,12 +35,7 @@
 }
 
 
-
-
-
 /*NAVBAR SECTION*/
-
-
 
 nav{
     background-color: white;
@@ -103,7 +96,6 @@ nav li:first-child{
 
 .sidebar a{
     width: 100%;
-    color: white;
 }
 
 
@@ -138,7 +130,8 @@ nav li:first-child{
 }
 
 #caption2{
-    color: rgb(64, 200, 227);
+    color: #0d6efd;
 }
 
+/*color:*/
 
