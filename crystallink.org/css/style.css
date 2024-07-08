@@ -1805,6 +1805,7 @@ h1, h2, h3, h4, h5,
 
 /*side buttons*/
 .sideBtn{
+  display: none;
   position: fixed;
   background-color: transparent;
   right: 3%;
@@ -1886,4 +1887,28 @@ h1, h2, h3, h4, h5,
       height: 50px;
     }
     
+
+    /* HERO-SECTON */
+    .hero-section-1{
+      border-radius: 15px;
+      border: 2px dashed #0d6efd;
+      backdrop-filter: blur(4px);
+      background: linear-gradient(darkslateblue,#0d6efd, whitesmoke);
+      box-shadow: -10 0 10 rgba(0, 0, 0, 0.1);
+    }
   
+    .heroBtn{
+      background-color: transparent;
+      z-index: 1;
+      cursor: pointer;
+      font-size: 35px;
+      padding: 3px 9px;
+      border: 1px dashed #0d6efd;
+      border-radius: 10px;
+    }
+
+    @media(max-width: 420px){
+      .ccc{
+          margin-right: 15px;
+      }
+  }
