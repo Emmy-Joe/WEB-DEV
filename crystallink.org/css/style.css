@@ -1819,7 +1819,7 @@ h1, h2, h3, h4, h5,
 
 .rotate{
   animation-name: rotating;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function:  linear;
 }
@@ -1843,7 +1843,9 @@ h1, h2, h3, h4, h5,
 
 
 .sideBtn:hover{
-  background-color: darkgray;
+  background-color: rgba(169, 169, 169, 0.701);
+  font-weight: 800;
+  font-size: 50px;
 }
 
     #sideCall{
@@ -1857,19 +1859,19 @@ h1, h2, h3, h4, h5,
       bottom: 40px;
 
       animation-name: floating;
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function:ease-in-out;
     }
     @keyframes floating{
       0%{
-        transform: translate(0, 20px);
+        transform: translate(0, 15px);
       }
       50%{
         transform: translate(0, 0);
       }
       100%{
-        transform: translate(0, 20px);
+        transform: translate(0, 15px);
       }
     }
       
@@ -1894,6 +1896,12 @@ h1, h2, h3, h4, h5,
       border: 2px dashed #000;
       backdrop-filter: blur(0px);
     }
+    @media(max-width: 900px){
+      .hero-section-1{
+        margin-right: 6px;
+        margin-left: 6px;
+      }
+    }
   
     .heroBtn{
       background-color: transparent;
@@ -1911,12 +1919,11 @@ h1, h2, h3, h4, h5,
       gap: 10px;
     }
     .hero-ads-item{
-      color: #fff;
       padding: 8px;
       border-radius: 10%;
       border: 2px dashed #000;
       background-color: transparent;
-      z-index: -1;
+      z-index: 1;
 
       animation-name: ads;
       animation-duration: 3s;
@@ -1935,18 +1942,33 @@ h1, h2, h3, h4, h5,
       }
     }
 
-    .hero-ads-item a:hover{
-      background-color: rgba(169, 169, 169, 0.302);
-      cursor: pointer;
-    }
     .hero-ads-item a{
-      color: white;
-      text-shadow: 1px 1px 2px black;
+      text-shadow: 1px 1px 2px #000;
     }
 
-    .bg-image {
-      background-size: cover;
-      background-position:  right;
-      z-index: -2;
+    .hero-ads-item a:hover {
+      /* background-color: rgba(169, 169, 169, 0.499); */
+      cursor: pointer;
+      font-size: 40px;
   }
+  
+  .heroBtn:hover {
+      cursor: pointer;
+      font-size: 60px;
+  }
+  
+  .bg-img-hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.bg-img-hero:hover {
+    transform: scale(1.2); /* Grow the image on hover */
+}
+
+    
   
