@@ -1916,14 +1916,20 @@ h1, h2, h3, h4, h5,
     .hero-ads{
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      justify-content: center;
+      flex-shrink: 1;
+      margin-top: 20px;
     }
-    .hero-ads-item{
-      padding: 8px;
+    .hero-ads-item {
+      display: flex;
+      flex-shrink: 2;
       border-radius: 10%;
-      border: 2px dashed #000;
+      border: 4px double #000;
       background-color: transparent;
-      z-index: 1;
+      background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(245, 245, 245, 0.574), #0d6dfd2a);
+      margin: 10px 0;
+      padding: 10px 5px;
+      /* transition: transform 0.5s ease; */
 
       animation-name: ads;
       animation-duration: 3s;
@@ -1943,13 +1949,15 @@ h1, h2, h3, h4, h5,
     }
 
     .hero-ads-item a{
-      text-shadow: 1px 1px 2px #000;
-    }
+      color: #000;
+      text-shadow: 1px 1px 2px #fff;
+      
+    } 
 
     .hero-ads-item a:hover {
-      /* background-color: rgba(169, 169, 169, 0.499); */
       cursor: pointer;
-      font-size: 40px;
+      font-size: 26px;
+      font-weight: 700;
   }
   
   .heroBtn:hover {
@@ -1961,14 +1969,80 @@ h1, h2, h3, h4, h5,
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
     height: 100%;
     width: 100%;
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transition: transform 0.3s ease-in-out; /* Smooth transition controlled by JAVASCRIPT */
 }
 
-.bg-img-hero:hover {
-    transform: scale(1.2); /* Grow the image on hover */
+
+.hero-sub-title{
+  padding-top: 15px;
+  color: #000; 
+  text-shadow: 1px 1px 3px #fff; 
+  font-weight: 600;
+  z-index: 3;
+  font-style: oblique;
 }
 
-    
+
+
+
+
+
+.target-skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.targ-skill-item {
+  border-radius: 10%;
+  border: 2px groove #000;
+  padding-block: 3px;
+  background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(245, 245, 245, 0.574), #0d6dfd95);
+  margin: 5px;
+  padding: 10px 20px;
+  transition: transform 0.5s ease;
+  animation-name: skills;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes skills{
+  0%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-10px)
+  }
+  40%{
+    transform: translateX(-20px);
+  }
+  60%{
+    transform: translateX(0px);
+  }
+  80%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+}
+
+.targ-skill-item a{
+  color: #000;
+  text-shadow: 1px 1px 2px #fff;
   
+} 
+
+.targ-skill-item a:hover {
+  /* background-color: rgba(169, 169, 169, 0.499); */
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+  text-shadow: 3px 2px 2px #ac9797;;
+}
+
+
+
