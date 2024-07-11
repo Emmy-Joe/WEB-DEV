@@ -33,5 +33,6 @@ Here is a list of commonly used URL encoding for various characters:
 - Vertical bar/pipe (`|`): `%7C`
 - Close brace (`}`): `%7D`
 - Tilde (`~`): `%7E`
+-new-line character: %0A
 
 For example, if you want to encode the message "Hello, World!", you would replace spaces with `%20` and the comma with `%2C`, resulting in "Hello%2C%20World%21".

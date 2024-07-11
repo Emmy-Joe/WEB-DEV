@@ -1938,13 +1938,13 @@ h1, h2, h3, h4, h5,
     }
     @keyframes ads{
       0%{
-        transform: translate(0, 20px);
+        transform: translate(0, 30px);
       }
       50%{
         transform: translate(0, 0)
       }
       100%{
-        transform: translate(0, 20px);
+        transform: translate(0, 30px);
       }
     }
 
@@ -2013,20 +2013,35 @@ h1, h2, h3, h4, h5,
   0%{
     transform: translateX(0);
   }
+  10%{
+    transform: translateX(-5px)
+  }
   20%{
-    transform: translateX(-10px)
+    transform: translateX(-10px);
+  }
+  30%{
+    transform: translateX(-15px);
   }
   40%{
-    transform: translateX(-20px);
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(-5px);
   }
   60%{
     transform: translateX(0px);
   }
+  70%{
+    transform: translateX(5px);
+  }
   80%{
     transform: translateX(10px);
   }
+  90%{
+    transform: translateX(5px);
+  }
   100%{
-    transform: translateX(20px);
+    transform: translateX(0px);
   }
 }
 
@@ -2045,4 +2060,79 @@ h1, h2, h3, h4, h5,
 }
 
 
+
+
+
+/* SERVICE SECTION */
+
+.grid-container{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr) );
+  row-gap: 1em;
+  margin: 10px;
+  justify-items: center;
+} 
+ 
+.service-item{
+  border-radius: 10%;
+  height: 350px;
+  width: 200px;
+  /* border: 4px double #000; */
+  background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(62, 60, 60, 0.574), #f8f9faf4);
+  box-shadow: 3px 3px 6px #000;
+
+  /* padding: 10px 5px; */
+  /* transition: transform 0.5s ease; */
+
+  animation-name: st;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes st{
+  0%{
+    transform: translate(10px);
+  }
+  50%{
+    transform: translate(0)
+  }
+  100%{
+    transform: translate(10px);
+  }
+}
+
+.service-item-contenet{
+  text-align: center;
+}
+
+.service-item-contenet h3{
+  color: #fff;
+  text-shadow: 1px 1px 2px#212529;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.service-item-contenet p{
+  color: white;
+}
+
+.service-item-contenet a{
+  color: white;
+  padding: 10px 20px;
+  border: 2px groove white;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+
+
+.grid-container .service-item:hover{
+  width: calc(100% + 1px); /* Increases width by 10px */
+  height: calc(100% + 1px); /* Increases height by 10px */
+  .service-item-contenet{
+    font-weight: 800;
+    /* transform: scale(1.03); */
+    
+  }
+}
 

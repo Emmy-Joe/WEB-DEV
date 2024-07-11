@@ -10,9 +10,41 @@
     <meta name="author" content="CRYSTALLINK TUTORIALS AND TECHNOLOGY">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar-vb.css">
+    <link rel="stylesheet" href="custom_alert/custom-alert.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+      <!--CUSTOM ALERT-->
+      <div id="custom-alert-overlay">
+        <div id="custom-alert">
+          <div id="custom-alert-content">
+            <h1 id="custom-alert-title">2024 WAEC GCE</h1>
+            <p id="custom-alert-message"></p>
+    
+            <a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE!%20My%20location%20is" target="blank"> 
+            <button class="btn" >WhatsApp </button> </a>
+    
+            <a href="tel://+234 806 720 7668">
+            <button class="btn">Call Us</button></a>
+    
+            <a href="https://blog.crystallink.org/blog/2024/07/06/waec-gce-2024-2nd-series-registration/" target="_blank">
+              <button class="btn">More Info</button></a>
+            
+            <button class="btn" onclick="hideCustomAlert()">Close</button>
+          </div>
+        </div>
+      </div>
+  
+       <script>
+        window.onload = ()=>{
+          setTimeout(showCustomAlert, 10000);
+        }
+      </script>
+
+      <!--Custom Alert Ends-->
+
+
     <header>
         <div id="nav-bar">
             <nav role="navigation" aria-label="Main Navigation">
@@ -136,13 +168,14 @@
 
             <div class="buttons">
                 <div><a href="tel:+2348067207668" > <i class="fa-solid fa-phone fa-beat-fade"></i> CALL</a></div>
-                <div><a href="https://wa.me/2347089111115" target="_blank"> <i class="fa-brands fa-whatsapp fa-beat fa-lg"></i> Chat</a></div>
-                <div><a href="https://clt.com.ng" target="_blank"> <i class="fa-solid fa-up-right-from-square fa-beat-fade fa-xl"></i>Home</a></div>
+                <div><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20the%20following%20service(s):%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank"> <i class="fa-brands fa-whatsapp fa-beat fa-lg"></i> Chat</a></div>
+                <div><a href="https://crystallink.org/" target="_blank"> <i class="fa-solid fa-up-right-from-square fa-beat-fade fa-xl"></i>Home</a></div>
                 </div>
         </div>
     </main>
     
     <script src="js/app.js"></script>
+    <script src="custom_alert/custom-alert.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/typed.js"></script>
     <script>
