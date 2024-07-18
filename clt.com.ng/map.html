@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYSTALLINK | Office Location/Direction | 2024 WAEC/NECO GCE Registration/Tutorials | Coding Classes | Website Development Services</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar-vb.css">
+</head>
+<body>
+
+    
+    <header class="js-sticky-header">    
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a><img src="img/icons/close_icon.png" height="26" width="26" alt=""></a></li>
+                <li><a href="index.html#home-section" >Home</a></li>
+                <li><a href="index.html#services-section">Services</a></li>
+                <li><a href="index.html#about-section">About</a></li>
+                <li><a href="https://blog.crystallink.org/" target="_blank">Blog</a></li>
+                <li><a href="index.html#contact-section">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"> <h1 class="roboto-black-italic" id="caption"><b id="caption1">CRYSTAL</b><b id="caption2">LINK</b>&bullet;</h1></a></li>
+                <li class="hideOnMobile"><a href="index.html#home-section" class="nav-link">Home</a></li>
+                <li class="hideOnMobile"><a href="index.html#services-section" class="nav-link">Services</a></li>
+                <li class="hideOnMobile">
+                  <a href="index.html#about-section" class="nav-link">About</a>
+                </li>
+                <li class="hideOnMobile"><a href="https://blog.crystallink.org/" target="_blank" class="nav-link">Blog</a></li>
+                <li class="hideOnMobile"><a href="index.html#contact-section" class="nav-link">Contact</a></li>
+                <li class="showOnMobile" onclick="showSideBar()"><a><img src="img/icons/menu_icon.png" height="26" width="26" alt=""></a></li>
+            </ul>
+        </nav>
+        </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d585.5139016898806!2d7.329289550217984!3d9.167791031286361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd914e81a26ff%3A0xe83d02771935d855!2sCRYSTALLINK%20TUTORIALS%20AND%20SKILLS%20ACQUISITION%20CENTRE!5e0!3m2!1sen!2sng!4v1720003964262!5m2!1sen!2sng" width="100%" height="500px" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--NAV BAR JS CODE-->
+  <script>
+    function hideSideBar() {
+        document.querySelector('.sidebar').style.display = 'none';
+    }
+
+    function showSideBar() {
+        document.querySelector('.sidebar').style.display = 'block';
+    }
+
+    window.addEventListener('click', function(event) {
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar.style.display === 'block' && !event.target.closest('.showOnMobile')){
+            hideSideBar();
+        }
+    });
+    //use the below if statement if you want the side bar to close on clicking ONLY the outside window
+    // if (sidebar.style.display === 'block' && !sidebar.contains(event.target) && !event.target.closest('.showOnMobile'))
+</script>
+</body>
+</html>

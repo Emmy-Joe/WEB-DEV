@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CRYSTALLINK TUTORIALS AND TECHNOLOGY - Kubwa Abuja | 2024 WAEC/NECO GCE Registration/Tutorials | Coding Classes | Online Classes | Website Development Services</title>
-    <link rel="shortcut icon" type="image/png" href="img/crystallink-logo.png">
+    <title>CRYSTALLINK TUTORIALS AND TECHNOLOGY - ABUJA | 2024 WAEC/NECO GCE Registration/Tutorials in Abuja | Coding Classes | Online Classes | Holiday Lessons | Website Development Services</title>
+    <link rel="icon" type="image/png" href="img/crystallink-logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Comprehensive tutorials and technology services in Kubwa, Abuja. Offering 2024 WAEC/NECO GCE registration and tutorials, coding classes, and website development services.">
@@ -12,7 +12,7 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="CRYSTALLINK TUTORIALS AND TECHNOLOGY - Kubwa Abuja">
-    <meta property="og:description" content="Offering 2024 WAEC/NECO GCE registration and tutorials, coding classes, and website development services in Kubwa, Abuja, online classes also available.">
+    <meta property="og:description" content="Offering 2024 WAEC/NECO GCE registration and tutorials, coding classes, and website development services in, Abuja, online classes also available.">
     <meta property="og:image" content="img/clt-logo-row.png">
     <meta property="og:url" content="https://https://crystallink.org/">
     <meta property="og:type" content="website">
@@ -30,6 +30,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="custom_alert/custom-alert.css">
@@ -38,16 +39,19 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <div class="site-wrap roboto-regular">
+  <div class="roboto-regular">
 
       <!--CUSTOM ALERT-->
       <div id="custom-alert-overlay">
         <div id="custom-alert">
           <div id="custom-alert-content">
             <h1 id="custom-alert-title">2024 WAEC GCE</h1>
-            <p id="custom-alert-message"></p>
+            <p id="custom-alert-message"></p> 
+
+            <a href="#gce-cost">
+              <button class="btn" onclick="hideCustomAlert()">Reg. Cost</button></a>
     
-            <a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE!%20My%20location%20is" target="blank"> 
+            <a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="blank"> 
             <button class="btn" >WhatsApp </button> </a>
     
             <a href="tel://+234 806 720 7668">
@@ -60,16 +64,25 @@
           </div>
         </div>
       </div>
-  
-       <script>
+    
+      <script>
         window.onload = ()=>{
           setTimeout(showCustomAlert, 10000);
         }
       </script>
-
+            
       <!--Custom Alert Ends-->
+
+
+  <!-- side call button -->
+  <button id="sideCall" class="sideBtn rotate"><a href="tel://+234 806 720 7668"><span class="text-primary icon-phone2"> </span></a></button>
+  <!-- side-bar WhatsApp button-->
+  <button id="sideChat" class="sideBtn rotate"><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20the%20following%20service(s):%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank"><span class="text-primary icon-whatsapp"> </span></a></button>
+  <!-- SCROLL TO TOP function -->
+  <button onclick="topFunction()" id="myBtn" class="sideBtn"><span class="text-primary icon-arrow-up"> </span></button>
+ 
     
-      <div class="border-bottom top-bar py-2 bg-dark" id="home-section">
+      <div class="top-bar bg-dark" id="home">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -90,36 +103,36 @@
       </div>
 
 
-    <header class="js-sticky-header">    
-    <nav>
+    <header class="js-sticky-header"> 
+      <nav>
         <ul class="sidebar">
             <li onclick="hideSideBar()"><a><img src="img/icons/close_icon.png" height="26" width="26" alt=""></a></li>
-            <li><a href="#home-section" >Home</a></li>
-            <li><a href="#services-section">Services</a></li>
-            <li><a href="#about-section">About</a></li>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="https://blog.crystallink.org/" target="_blank">Blog</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
-            <li><a href="#"> <h1 class="roboto-black-italic" id="caption"><b id="caption1">CRYSTAL</b><b id="caption2">LINK</b>&bullet;</h1></a></li>
-            <li class="hideOnMobile"><a href="#home-section" class="nav-link">Home</a></li>
-            <li class="hideOnMobile"><a href="#services-section" class="nav-link">Services</a></li>
+            <li><a href="#"><img src="img/crystallink-logo.png" width="auto" height="40px" alt="Crystallink Tutorial Logo"><h1 class="roboto-black" id="caption"><b id="caption1">CRYSTAL</b><b id="caption2">LINK</b>&bullet;</h1></a></li>
+            <li class="hideOnMobile"><a href="#home" class="nav-link">Home</a></li>
+            <li class="hideOnMobile"><a href="#services" class="nav-link">Services</a></li>
             <li class="hideOnMobile">
-              <a href="#about-section" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="hideOnMobile"><a href="https://blog.crystallink.org/" target="_blank" class="nav-link">Blog</a></li>
-            <li class="hideOnMobile"><a href="#contact-section" class="nav-link">Contact</a></li>
+            <li class="hideOnMobile"><a href="#contact" class="nav-link">Contact</a></li>
             <li class="showOnMobile" onclick="showSideBar()"><a><img src="img/icons/menu_icon.png" height="26" width="26" alt=""></a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
 
     <div class="container">
       <div class="row align-items-center justify-content-center text-center mb-4">
         <div class="col-md-12 col-sm-12">
           <!--Text above type-word-->       
-          <h1 style="color: #0d6efd; text-shadow: 1px 1px 1px darkslateblue;"> <span style="color: whitesmoke;" class="|">|</span>TUTORIALS <span style="color: whitesmoke; text-shadow: #000;" class="">&</span> TECHNOLOGY<span style="color: whitesmoke;" class="|">|</span></h1>
-          <h2><span style="color: #000; text-shadow: 1px 1px 2px #fff; font-weight: 500;" class="typed-words"></span></h2>
+          <h1 class="text-primary text-shadow-primary"> <span style="color: whitesmoke;" class="|">|</span>TUTORIALS <span style="color: whitesmoke; text-shadow: #000;" class="">&</span> TECHNOLOGY<span style="color: whitesmoke;" class="|">|</span></h1>
+          <h2><span style="color: #000; font-weight: 500;" class="typed-words"></span></h2>
         </div>
       </div>
     </div>
@@ -127,38 +140,34 @@
       
     <div class="container">
       <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-center hero-section-1">
+          <div class="col-lg-6 col-md-12 col-sm-12 col text-center hero-section-1">
             <p>
               <u class="hero-sub-title">Contact Us for a New Experience!!</u>
             </p>
-                  <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col hero-ads">
-                        <span class="hero-ads-item"><a >JAMB/SSCE/GCE TUTORIALS</a></span>
-                        <span class="hero-ads-item"><a >WAEC/NECO EXAM REGISTRATIONS</a></span>
-                        <span class="hero-ads-item"><a >COMPUTER/CODING CLASSESS</a></span>
-                        <span class="hero-ads-item"><a >WEBSITE DEVELOPMENT SERVICES</a></span>
-<!--                         
-                        <span class="hero-ads-item"><a href="">BACK-END DEVELOPMENT</a></span>
-                        <span class="hero-ads-item"><a href="">FULL-STACK DEVELOPMENT</a></span>
-                        <span class="hero-ads-item"><a href="">COMPUTER PROGRAMMING</a></span>
-                        <span class="hero-ads-item"><a href="">COMPUTER APPRECIATION</a></span>
-                        <span class="hero-ads-item"><a href="">MOBILE/DESKTOP APP</a></span> -->
-                        <div>
-                      </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col">
-                      <div style="background-image: url(img/bg-imgg.png); background-size: contain; background-repeat: no-repeat; background-position:  center; height: 100%; width: 100%; z-index: -1;"></div>
-                    </div>
-                    </div>
-                    <br>
-                    <a href="tel:+2348067207668" class="btn btn-primary btn-lg text-center" style="z-index: 999;">
-                      CALL US NOW <br><small>0806 720 7668</small></a>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col hero-ads">
+                  <span class="hero-ads-item"><a >JAMB/SSCE/GCE TUTORIALS</a></span>
+                  <span class="hero-ads-item"><a >WAEC/NECO EXAM REGISTRATIONS</a></span>
+                  <span class="hero-ads-item"><a >COMPUTER/CODING CLASSESS</a></span>
+                  <span class="hero-ads-item"><a >WEBSITE DEVELOPMENT SERVICES</a></span>
+                  <div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col">
+                <div style="background-image: url(img/bg-imgg.png); background-size: contain; background-repeat: no-repeat; background-position:  center; height: 100%; width: 100%; z-index: -1;"></div>
+              </div>
+              </div>
+              <br>
+              <a href="tel:+2348067207668" class="btn btn-primary btn-lg text-center" style="z-index: 999;">
+                CALL US NOW <br><small>0806 720 7668</small></a>
           </div>
   
           <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="row">
               <div class="col-lg-8 col-md-8 col-sm-8 col-8 text-center">
                   <div class="bg-img-hero" style="background-image: url(img/bg-imgw.png);">
+                    <br><br><br><br><br>
+                    <h3><tt><span style="text-shadow: 1px 1px 2px #212529; font-weight: 400;" class="welcome-words text-primary text-center"></span></tt></h3>
                   </div>
               </div>
 
@@ -181,16 +190,18 @@
                       <span class="targ-skill-item"><a >JavaScript</a></span>
                       <span class="targ-skill-item"><a >HTML</a></span>
                       <span class="targ-skill-item"><a >CSS</a></span>
+                      <span class="targ-skill-item"><a >Bootstrap</a></span>
                       <span class="targ-skill-item"><a >ReactJS</a></span>
                       <span class="targ-skill-item"><a >NextJS</a></span>
                       <span class="targ-skill-item"><a >ExpressJS</a></span>
                       <span class="targ-skill-item"><a >Python</a></span>
+                      <span class="targ-skill-item"><a >Django</a></span>
                       <span class="targ-skill-item"><a >UX/UI</a></span>
-                      <span class="targ-skill-item"><a >SQL</a></span>
+                      <span class="targ-skill-item"><a >DataBase</a></span>
                       <span class="targ-skill-item"><a >Git</a></span>
                       <span class="targ-skill-item"><a >Word</a></span>
                       <span class="targ-skill-item"><a >Excel</a></span>
-                      <span class="targ-skill-item"><a >POWERPOINT</a></span>
+                      <span class="targ-skill-item"><a >PowerPoint</a></span>
                     </div>
                 </div>
               </div>
@@ -203,145 +214,153 @@
   
       <br>
 
-    <div style="text-align: center; color:brown; font-size: 22px"> <mark title="WAEC for Private Candidates - 2024 Second Series">2024 WAEC/NECO GCE</mark>...  
-      <b style="color: deepskyblue; font-size: 20px; padding: 0px 10px 0px 0px; "><a
-          href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="blank"> Contact Us for Registration/Tutorials </a></b> </div>
+    <div class="text-primary text-shadow-primary text-center"> <mark title="WAEC for Private Candidates - 2024 Second Series">2024 WAEC/NECO GCE</mark>...  
+      <a class="text-primary" href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="blank"> Contact Us for Registration/Tutorials </a></div>
     <br>
 
-    <marquee loop="-1" scrollamount="5"  behavior="alternate"  bgcolor="whitesmoke" width="80%" height="30px" style="color: #0d6efd; font-size:20px; margin-left: 10%"><mark>Education is a Great Investment... </mark>  Enroll Your Child in Our 2024 SSCE/Holiday Lessons & Coding Class <mark>  ...you'll definitely be glad you did!!</mark></marquee>
-
+  
         <!-- SERVICE-SECTION -->
-      <section class="site-section" id="services-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="text-black h1 site-section-heading text-center">Our Services</h2>
-              <p class="lead"> </p>
+        <section class="site-section" id="services">
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+              <div class="col-md-8 text-center">
+                <h2 class="text-black h1 site-section-heading text-center">Our Services</h2>
+                <p class="lead"> </p>
+              </div>
             </div>
           </div>
-        </div>
-
-
-
-
-
-        <section class="grid-container">
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>JAMB/SSCE TUTORIALS</h3> <hr>
-            <p>#11,000 <hr>
-              <span>Per Month</span></p> <hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20Tutorials.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:">Register</a></span>
+  
+          <section class="service-container">
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>JAMB/SSCE TUTORIALS <br> <small style="font-size: 14px;">(Also, PostUTME & Holiday Lessons)</small></h3> <hr>
+              <p id="gce-cost">#11,000 <hr>
+                <span>Per Month</span></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20Tutorials.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>WAEC GCE Registration</h3> <hr>
-            <p> #33,500 <hr>
-              <small>PIN and Biometrics</small></p> <hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: ">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>WAEC GCE Registration</h3> <hr>
+              <p> #33,000 <br> <small style="font-size: 15px;">(Covers PIN & Biometrics)</small><hr>
+                <small>NIN is Compulsory</small></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>COMPUTER BASICS</h3> <hr>
-            <p>#30,000 <hr>
-              <span>2 Months</span>
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20COMPUTER%20BASICS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: ">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>NECO GCE Registration</h3> <hr>
+              <p> #29,500 <br> <small style="font-size: 15px;">(Covers TOKEN & Biometric)</small><hr>
+                <small>NIN is Compulsory</small></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20NECO%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: " target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>WEBSITE DEVELOPMENT</h3> <hr>
-            <p> #70,000 <hr>
-              <span>3 Months</span>
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WEBSITE%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: ">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>COMPUTER BASICS <br> <small style="font-size: 14px;">(OS, Word, Excel & PP)</small></h3> <hr>
+              <p>#30,000 <hr>
+                <span>2 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20COMPUTER%20BASICS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>BACK-END DEVELOPMENT</h3> <hr>
-            <p>#100,000 <hr>
-              <span>4 Months</span>
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>WEBSITE <small>DEVELOPMENT</small> <br><small style="font-size: 16px;">(Front-End)</small></h3> <hr>
+              <p> #70,000 <hr>
+                <span>3 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WEBSITE%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>PYTHON CODING</h3> <hr>
-            <p>#70,000 <hr>
-              <span>3 Months</span>
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20PROGRAMMING%20USING%20PYTHON.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>BACK-END <small>DEVELOPMENT</small></h3> <hr>
+              <p>#100,000 <hr>
+                <span>4 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>MOBILE & DESKTOP APPLICATIONS</h3> <hr>
-            <p>#150,000 <hr>
-              <span>6 Months</span>
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20MOBILE%20AND%20DESKTOP%20APPLICATIONS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:">Register</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>COMPUTER <small>PROGRAMMING (PYTHON)</small></h3> <hr>
+              <p>#70,000 <hr>
+                <span>3 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20PROGRAMMING%20USING%20PYTHON.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-contenet">
-            <h3>DEVELOPER</h3> <hr>
-            <p>You surely need a functional website to grow your business... 
-            </p><hr>
-            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:">Contact Us</a></span>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>MOBILE APP <small>DEVELOPMENT</small></h3> <hr>
+              <p>#200,000 <hr>
+                <span>4 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20MOBILE%20APP%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
             </div>
-          </div>
+  
+            <div class="service-item">
+              <div class="service-item-contenet">
+              <h3>UI/UX DESIGN</h3> <hr>
+              <p>#100,000 <hr>
+                <span>4 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20UI/UX%20DESIGN.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
+            </div>
+  
+            <div class="service-item">
+              <div class="service-item-contenet" style="margin: 0px 3px;">
+                <h3>NEED A WEBSITE?</h3> 
+                <p><small>Your business surely does! <hr>
+                  Let us help you shine online!</small>
+                </p>
+                <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Contact Us</a></span>
+                </div>
+            </div>
         </section>
-
+      </section>
+  
     <!-- Blog SECTION-->
 
-  <!--ABOUT SECTION-->
 
-  <section class="site-section" id="about-section">
-    <div class="container">
-      <div class="row mb-5 justify-content-center">
-        <div class="col-md-8 text-center">
-          <h2 class="text-black h1 site-section-heading text-center">About Us</h2>
-          <hr>
-          <p class="lead"> &blacktriangleright; <b>We Are Glad To Have You Here</b> &blacktriangleleft; </p>
-          <hr>
-        </div>
+  <!--ABOUT SECTION-->
+  <section class="site-section" id="about">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="text-black h1 site-section-heading text-center">About Us</h2>
+        <hr>
+        <p class="lead text-primary"> &blacktriangleright; <b>We Are Glad To Have You Here</b> &blacktriangleleft; </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <section class="about-container">
+    <div class="about-item">
+      <h2 class="text-primary text-center">Get To Know Us</h2> <hr>
+      <div class="content">
+        <b>Crystallink Tutorials and Technologies</b>, registered by the Nigerian Government, has been delivering top-notch educational and training services since January 2016. Our students have excelled, with many attending prestigious institutions in Nigeria and abroad. We follow the latest JAMB and WAEC syllabuses and the approved Senior secondary school curriculum, ensuring quality education with experienced Teachers.
+        
+        <p>
+        We offer well-organized, intensive online tutorials and face-to-face sessions. We also provide practical hands-on digital skills training in computer programming, website development, data analysis, and more. Furthermore, <mark>we develop and host stunning, responsive, and SEO-optimized websites for clients, from simple sites to complex web apps.</mark>
+        </p> 
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-5">
-          <div class="p-3 box-with-humber">
-            <div class="number-behind">01.</div>
-            <h2 class="text-primary">Who We Are</h2>
-            <p class="mb-4">
-              <b>Crystallink Tutorials and Technologies</b>, registered by the Nigerian Government, has been delivering top-notch educational services since January 2016. Our students have excelled, with many attending prestigious institutions in Nigeria and abroad. We follow the latest JAMB and WAEC syllabuses and the approved Senior secondary school curriculum, ensuring quality education with experienced Teachers.
-              <p>           
-              Our comprehensive classroom tutorials which cover all JAMB and WAEC subjects, holds in a conducive learning environment at our center. Additionally, our Skills acquisition program equip young individuals to be self-reliant and financially independent as they transition to higher education.
-              </p>
-              <p>
-              We offer well-organized, intensive online tutorials and face-to-face sessions. We also provide practical hands-on digital skills training in computer programming, website development, data analysis, and more. Furthermore, <mark>we develop and host stunning, responsive, and SEO-optimized websites for clients, from simple sites to complex web apps.</mark>
-              </p> 
-            </p>          
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="p-3 box-with-humber">
-            <div class="number-behind">02.</div>
-            <h2 class="text-primary">Our Mission</h2>
+    <div class="about-item">
+      <h2 class="text-primary text-center">Our Mission</h2><hr>
+      <div class="content">
             <p class="mb-4">At the heart of <b>Crystallink</b> is our unwavering mission:</p>
             <ul class="list-unstyled ul-check primary"> 
               <li>To draw people to the righteousness of God and to enjoy 
@@ -352,55 +371,52 @@
                 emphasizing the development of moral, ethical, and educational values in students. This mission imposes a  
                 commitment to nurturing not only intellectual growth but also the character and ethical foundation of individuals.</li>
             </ul>
-          </div>
-        </div>
-        
-        <div class="col-md-6 col-lg-4">
-          <div class="p-3 box-with-humber">
-            <div class="number-behind">03.</div>
-            <h2 class="text-primary">Our Fellowship</h2>
-            <p class="mb-4"> 
-            At Christlink Fellowship, we are committed to bridging the gap between people and the righteousness of God, 
-            helping individuals of all backgrounds and denominations to experience the fullness of a righteous life.
-            </p>
-            <p>With the guidance of the Holy Spirit, CHRISTLINK FELLOWSHIP has reached nearly one million people in 
-              the last five years, primarily focusing on youths preparing for JAMB/SSCE exams and campus students. 
-              This achievement is a result of our collaboration with 
-              <a href="https://clt.com.ng/" target="_blank">Crystallink Tutorials And Skills</a>, a partner organization, 
-              and we give all thanks to God for our success thus far.</p> 
-              <p><a href="https://fellowship.crystallink.org/" target="_blank"><b>Please Click Here to Visit Our Fellowship Page</b></a></p>           
-            </ul>
-          </div>
-        </div>
+      </div>
+    </div>
 
+    <div class="about-item">
+      <h2 class="text-primary text-center">Our Fellowship</h2> <hr>
+      <div class="content" id="fellowship-column">
+        <p class="mb-4"> 
+        At Christlink Fellowship, we are committed to bridging the gap between people and the righteousness of God, 
+        helping individuals of all backgrounds and denominations to experience the fullness of a righteous life.
+        </p>
+        <p>With the guidance of the Holy Spirit, CHRISTLINK FELLOWSHIP has reached nearly one million people in 
+          the last five years, primarily focusing on youths preparing for JAMB/SSCE exams and campus students. 
+          This achievement is a result of our collaboration with 
+          <a href="https://crystallink.org/" target="_blank">Crystallink Tutorials And Skills</a>, a partner organization, 
+          and we give all thanks to God for our success thus far.</p> 
+          <p><a href="https://fellowship.crystallink.org/" target="_blank"><b>Please Click Here to Visit Our Fellowship Page</b></a></p>           
+        </ul>
       </div>
     </div>
   </section>
+</section>
 
-      <!--WORK AREA-->
 
-      <section class="site-section bg-light" id="contact-section">
+      <!--CONTACT-SECTION-->
+
+      <section class="site-section bg-light" id="contact">
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
               <h2 class="text-black h1 site-section-heading">Contact Us</h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-7">
-              <div class="p-4 mb-3 bg-white">
-                <p class="mb-0 font-weight-bold"> Address <span class="icon-map-marker"></span></p>
-                <p class="mb-4"> Plot 1, Simon Onuh Close (Beside Mountain of Fire Church), Shelter-Farm Road (close to Liberty Junction), Byazhin, Kubwa - Abuja, Nigeria.</p>
-                <p class="mb-0 font-weight-bold">Phone <span class="icon-phone2"></span></p>
-                <p class="mb-4"><a href="tel://+234 806 720 7668">+234 806 720 7668</a></p>
-                <p class="mb-0 font-weight-bold">WhatsApp <span class="icon-whatsapp"></span></p>
-                <p class="mb-4"><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20the%20following%20service(s):%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="blank">0708 911 1115</a></p>
-                <p class="mb-0 font-weight-bold">Email Address <span class="icon-envelope-o"></span></p>
+          <div class="contact-container text-center">
+              <div class="p-4 mb-3 contact-box">
+                <p class="mb-0 roboto-black"> Address <span class="icon-map-marker"></span></p>
+                <p class="mb-4"> Plot 1, Simon Onuh Close (Beside Mountain of Fire Church), Shelter-Farm Road (close to Liberty Junction), Kubwa - Abuja, Nigeria.</p> <hr>
+                <p class="mb-0 roboto-black">Phone <span class="icon-phone2"></span></p>
+                <p class="mb-4"><a href="tel://+234 806 720 7668">+234 806 720 7668</a></p> <hr>
+                <p class="mb-0 roboto-black">WhatsApp <span class="icon-whatsapp"></span></p>
+                <p class="mb-4"><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20the%20following%20service(s):%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="blank">0708 911 1115</a></p> <hr>
+                <p class="mb-0 roboto-black">Email Address <span class="icon-envelope-o"></span></p>
                 <p class="mb-0"><a href="mailto:info@crystallink.org">info@crystallink.org</a></p>
               </div>
-            </div>
+           
                 <!--MAP-->
-             <div class="col-md-5 mb-5 p-4 roboto-black-italic text-center">
+             <div class=" mb-5 p-4 roboto-black-italic contact-box"> <br>
               <p><a href="map.html" target="_blank">Click Here to View Our Office Location/Direction on Google Map</a></p>
             </div>
           </div>
@@ -438,10 +454,10 @@
             <div class="col-md-3 ml-auto">
               <h2 class="footer-heading mb-4">Features</h2>
               <ul class="list-unstyled">
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#services-section">Services</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="https://blog.crystallink.org/" target="_blank" class="nav-link">Blogs</a></li>
-                <li><a href="#contact-section">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -472,7 +488,7 @@
             <small>
               &copy;
               <script>document.write(new Date().getFullYear());</script> CRYSTALLINK |
-              BN 2850285 | Site Design: <a href="https://clt.com.ng" target="_blank">CRYSTALLINK TECHNOLOGY</a> 
+              BN-2850285 | Site Design: <a href="https://developer.crystallink.org/" target="_blank">CRYSTALLINK TECHNOLOGY</a> 
             </small>
             </p>
           </div>
@@ -488,14 +504,7 @@
   <script src="custom_alert/custom-alert.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/sideBtn.js"></script>
- 
-  <!-- side call button -->
-  <button id="sideCall" class="sideBtn rotate"><a href="tel://+234 806 720 7668"><span class="text-primary icon-phone2"> </span></a></button>
-  <!-- side WhatsApp button-->
-  <button id="sideChat" class="sideBtn rotate"><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20your%20services!%20My%20location%20is" target="_blank"><span class="text-primary icon-whatsapp"> </span></a></button>
-  <!-- SCROLL TO TOP function -->
-  <button onclick="topFunction()" id="myBtn" class="sideBtn"><span class="text-primary icon-arrow-up"> </span></button>
- 
+
 
   <!--NAV BAR JS CODE-->
   <script>
@@ -515,8 +524,6 @@
     });
     </script>
 
-
-
 <script src="js/typed.js"></script>
 <script>
   var typed = new Typed('.typed-words', {
@@ -530,8 +537,20 @@
   });
 </script>
 
-</body>
+<script>
+  var typed = new Typed('.welcome-words', {
+    strings: ["WELCOME TO", "CRYSTALLINK", "CODING <br> CLASSES!!",],
+    typeSpeed: 200,
+    backSpeed: 100,
+    backDelay: 4000,
+    startDelay: 1000,
+    loop: true,
+    showCursor: true
+  });
+</script>
 
+
+</body>
 </html>
 
 

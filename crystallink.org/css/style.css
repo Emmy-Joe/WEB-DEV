@@ -108,9 +108,9 @@ h1, h2, h3, h4, h5,
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 5em 0; } }
+      padding: 4em 0; } }
   .site-section.site-section-sm {
-    padding: 4em 0; }
+    padding: 3em 0; }
 
 .site-section-heading {
   padding-bottom: 15px;
@@ -1562,7 +1562,7 @@ h1, h2, h3, h4, h5,
   font-size:  small; }
     .social-media li a{
       text-decoration: none;
-      color: #0d6efd;
+      color: rgba(0, 184, 222);
     }
 
 .ft-feature-1 {
@@ -1808,18 +1808,18 @@ h1, h2, h3, h4, h5,
   display: none;
   position: fixed;
   background-color: transparent;
-  right: 3%;
+  left: 4%;
   z-index: 999;
   cursor: pointer;
-  font-size: 35px;
-  padding: 2px 8px;
-  border: 1px dashed #0d6efd;
+  font-size: 30px;
+  padding: 2px 5px;
+  border: 2px dashed #fff;
   border-radius: 50%;
 }
 
 .rotate{
   animation-name: rotating;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function:  linear;
 }
@@ -1841,11 +1841,10 @@ h1, h2, h3, h4, h5,
   }
 }
 
-
 .sideBtn:hover{
-  background-color: rgba(169, 169, 169, 0.701);
+  background-color: rgba(242, 239, 239, 0.701);
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
 }
 
     #sideCall{
@@ -1986,10 +1985,6 @@ h1, h2, h3, h4, h5,
 }
 
 
-
-
-
-
 .target-skills{
   display: flex;
   flex-wrap: wrap;
@@ -2000,7 +1995,7 @@ h1, h2, h3, h4, h5,
   border-radius: 10%;
   border: 2px groove #000;
   padding-block: 3px;
-  background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(245, 245, 245, 0.574), #0d6dfd95);
+  background: linear-gradient(rgba(0, 46, 110, 0.561), white, rgba(0, 185, 222, 0.539));
   margin: 5px;
   padding: 10px 20px;
   transition: transform 0.5s ease;
@@ -2053,21 +2048,18 @@ h1, h2, h3, h4, h5,
 
 .targ-skill-item a:hover {
   /* background-color: rgba(169, 169, 169, 0.499); */
-  cursor: pointer;
+  cursor: grabbing;
   font-size: 26px;
   font-weight: 600;
-  text-shadow: 3px 2px 2px #ac9797;;
 }
-
-
 
 
 
 /* SERVICE SECTION */
 
-.grid-container{
+.service-container{
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr) );
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
   row-gap: 1em;
   margin: 10px;
   justify-items: center;
@@ -2078,11 +2070,9 @@ h1, h2, h3, h4, h5,
   height: 350px;
   width: 200px;
   /* border: 4px double #000; */
-  background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(62, 60, 60, 0.574), #f8f9faf4);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(62, 60, 60, 0.574), #f8f9faf4); */
+  background: linear-gradient(rgba(0, 184, 222), rgba(62, 60, 60, 0.574), #f8f9faf4);
   box-shadow: 3px 3px 6px #000;
-
-  /* padding: 10px 5px; */
-  /* transition: transform 0.5s ease; */
 
   animation-name: st;
   animation-duration: 3s;
@@ -2114,21 +2104,20 @@ h1, h2, h3, h4, h5,
 
 .service-item-contenet p{
   color: white;
+  text-shadow: 1px 1px 2px rgba(0, 46, 110) ;
 }
 
 .service-item-contenet a{
   color: white;
-  padding: 10px 20px;
-  border: 2px groove white;
+  padding: 1px 8px;
+  border: 2px ridge white;
   border-radius: 10px;
-  background-color: #000;
+  background-color: rgb(0, 185, 222);
 }
 
-
-
-.grid-container .service-item:hover{
-  width: calc(100% + 1px); /* Increases width by 10px */
-  height: calc(100% + 1px); /* Increases height by 10px */
+.service-container .service-item:hover{
+  /* width: calc(100% + .1px);  */
+  height: calc(100% + 5px); /* Increases height by 10px */
   .service-item-contenet{
     font-weight: 800;
     /* transform: scale(1.03); */
@@ -2136,3 +2125,42 @@ h1, h2, h3, h4, h5,
   }
 }
 
+
+/* ABOUT-SECTION */
+.about-container{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 1em;
+  margin: 10px;
+  justify-items: center;
+}
+
+.about-item{
+  height: auto;
+  width: auto;
+  margin: 10px;
+  border: 1px ridge #000;  
+  border-radius: 10%;
+  background: linear-gradient(rgb(255, 254, 254), rgb(223, 218, 218), white);
+  box-shadow: 3px 3px 6px #000;
+}
+
+.about-item .content{
+  margin: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+
+.contact-box{
+  box-shadow: 1px 1px 4px #000;
+  border-radius: 10%;
+  background-color: white;
+}
+
+/* .about-container .about-item:hover{
+  .content{
+    font-family: monospace;
+    font-weight: 700;
+  }
+} */
