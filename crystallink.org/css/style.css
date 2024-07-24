@@ -1916,19 +1916,17 @@ h1, h2, h3, h4, h5,
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      flex-shrink: 1;
       margin-top: 20px;
+      overflow-wrap: break-word;
     }
     .hero-ads-item {
       display: flex;
-      flex-shrink: 2;
       border-radius: 10%;
       border: 4px double #000;
       background-color: transparent;
       background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(245, 245, 245, 0.574), #0d6dfd2a);
       margin: 10px 0;
       padding: 10px 5px;
-      /* transition: transform 0.5s ease; */
 
       animation-name: ads;
       animation-duration: 3s;
@@ -1937,13 +1935,13 @@ h1, h2, h3, h4, h5,
     }
     @keyframes ads{
       0%{
-        transform: translate(0, 30px);
+        transform: translate(0, 35px);
       }
       50%{
         transform: translate(0, 0)
       }
       100%{
-        transform: translate(0, 30px);
+        transform: translate(0, 35px);
       }
     }
 
@@ -1955,8 +1953,7 @@ h1, h2, h3, h4, h5,
 
     .hero-ads-item a:hover {
       cursor: pointer;
-      font-size: 26px;
-      font-weight: 700;
+      font-weight: 800;
   }
   
   .heroBtn:hover {
@@ -1971,7 +1968,7 @@ h1, h2, h3, h4, h5,
     z-index: -1;
     height: 100%;
     width: 100%;
-    transition: transform 0.3s ease-in-out; /* Smooth transition controlled by JAVASCRIPT */
+    /* transition: transform 0.3s ease-in-out; Smooth transition controlled by JAVASCRIPT */
 }
 
 

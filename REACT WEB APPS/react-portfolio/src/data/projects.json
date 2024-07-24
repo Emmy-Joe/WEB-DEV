@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Project 1",
+    "imageSrc": "projects/project.png",
+    "description": "This is project was build using the folloing tools/languages.",
+    "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    "demo": "https://crystallink.org/",
+    "source": "https://github.com/Emmy-Joe"
+  },
+  {
+    "title": "Project 2",
+    "imageSrc": "projects/project1.png",
+    "description": "This is a project made to learn some advance CSS features.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://home.clt.com.ng/",
+    "source": "https://github.com/Emmy-Joe/WEB-DEV"
+  },
+  {
+    "title": "Project 3",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    "demo": "https://clt.com.ng/",
+    "source": "https://github.com/Emmy-Joe"
+  }
+]

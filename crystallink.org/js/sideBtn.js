@@ -30,7 +30,7 @@
       var imageElement = document.querySelector('.bg-img-hero');
       
       // Adjust the scaling factor based on scroll position
-      var scaleFactor = 1 + (scrollPosition / 5000);
+      var scaleFactor = 1 + (scrollPosition / 9000);
       imageElement.style.transform = 'scale(' + scaleFactor + ')';
   });
 
