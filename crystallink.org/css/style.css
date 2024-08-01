@@ -2056,7 +2056,7 @@ h1, h2, h3, h4, h5,
 
 .service-container{
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
   row-gap: 1em;
   margin: 10px;
   justify-items: center;
@@ -2064,8 +2064,8 @@ h1, h2, h3, h4, h5,
  
 .service-item{
   border-radius: 10%;
-  height: 350px;
-  width: 200px;
+  height: auto;
+  width: 210px;
   /* border: 4px double #000; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(62, 60, 60, 0.574), #f8f9faf4); */
   background: linear-gradient(rgba(0, 184, 222), rgba(62, 60, 60, 0.574), #f8f9faf4);
@@ -2113,8 +2113,8 @@ h1, h2, h3, h4, h5,
 }
 
 .service-container .service-item:hover{
-  /* width: calc(100% + .1px);  */
-  height: calc(100% + 5px); /* Increases height by 10px */
+  width: calc(100% + 1%);  
+  /* height: calc(100% + 5px);  Increases height by 10px */
   .service-item-contenet{
     font-weight: 800;
     /* transform: scale(1.03); */

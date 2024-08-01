@@ -41,6 +41,9 @@ nav a:hover{
 
 nav li:first-child{
     margin-right: auto;
+    a{
+        background-color: transparent;
+    }
 }
 
 .sidebar{
