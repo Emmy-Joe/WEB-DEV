@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="custom_alert/custom-alert.css">
     <link rel="stylesheet" href="css/navbar-vb.css">
+    <link rel="stylesheet" href="css/borderAnimate.css">
+    <link rel="stylesheet" href="css/service.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -44,7 +46,7 @@
       <!--CUSTOM ALERT-->
       <div id="custom-alert-overlay">
         <div id="custom-alert">
-          <div id="custom-alert-content">
+          <div id="custom-alert-content" class="custume-alert">
             <h1 id="custom-alert-title">2024 WAEC & NECO GCE</h1>
             <p id="custom-alert-message"></p> 
 
@@ -62,11 +64,18 @@
         </div>
       </div>
     
-      <script>
+     <script>
         window.onload = ()=>{
           setTimeout(showCustomAlert, 6000);
         }
-      </script>       
+
+        window.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('custom-alert-overlay');
+        if (sidebar.style.display === 'block' && !event.target.closest('.custume-alert')){
+          hideCustomAlert();
+        }
+    });
+      </script>     
       <!--Custom Alert Ends-->
 
   <!-- side call button -->
@@ -111,7 +120,7 @@
             <li class="hideOnMobile"><a href="#home" class="nav-link">Home</a></li>
             <li class="hideOnMobile"><a href="#services" class="nav-link">Services</a></li>
             <li class="hideOnMobile">
-              <a href="#about" class="nav-link">About Us</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="hideOnMobile"><a href="https://blog.crystallink.org/" target="_blank" class="nav-link">Blog</a></li>
             <li class="hideOnMobile"><a href="#contact" class="nav-link">Contact</a></li>
@@ -137,11 +146,11 @@
               <u class="hero-sub-title">Contact Us for a New Experience!!</u>
             </p>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col hero-ads">
-                  <h1 class="hero-ads-item"><a href="#waec_neco_gce">WAEC GCE FORM & BIOMETRICS</a></h1>
-                  <h1 class="hero-ads-item"><a href="#services">JAMB, SSCE & GCE TUTORIALS</a></h1>
-                  <h1 class="hero-ads-item"><a href="#coding_class">COMPUTER & CODING CLASSESS</a></h1>
-                  <h1 class="hero-ads-item"><a href="#website_developer">WEBSITE DESIGN SERVICES</a></h1>
+                <div class="col-lg-6 col-md-6 col-sm-6 col card-container">
+                  <h1 class="card card-item"><a href="#waec_neco_gce">WAEC GCE FORM & BIOMETRICS</a></h1>
+                  <h1 class="card card-item"><a href="#services">JAMB, SSCE & GCE TUTORIALS</a></h1>
+                  <h1 class="card card-item"><a href="#coding_class">COMPUTER & CODING CLASSESS</a></h1>
+                  <h1 class="card card-item"><a href="#website_developer">WEBSITE DESIGN SERVICES</a></h1>
                   <div>
                 </div>
                 </div>
@@ -218,118 +227,96 @@
               </div>
             </div>
           </div>
-  
-          <section class="service-container">
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>JAMB/SSCE TUTORIALS <br> <small style="font-size: 14px;">(Also, PostUTME & Holiday Lessons)</small></h3> <hr>
-              <p id="waec_neco_gce">#11,000 
-                <span>Per Month</span></p> <hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20Tutorials.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>WAEC GCE Registration</h3> <hr>
-              <p> #33,000 <br> <small style="font-size: 15px;">(Covers PIN & Biometrics)</small>
-                <small>NIN is Compulsory</small> <small style="font-size: 14px;"> <a href="https://blog.crystallink.org/blog/2024/07/06/waec-gce-2024-2nd-series-registration/" target="_blank">
-                  <button class="btn">More Info</button></a> </small></p> <hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>NECO GCE Registration</h3> <hr>
-              <p> #29,500 <br> <small style="font-size: 15px;">(Covers TOKEN & Biometric)</small><hr>
-                <small>NIN is Compulsory</small></p> <hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20NECO%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: " target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3 id="coding_class">COMPUTER APPRECIATION <br> <small style="font-size: 14px;">(OS, Word, Excel & PP)</small></h3> <hr>
-              <p>#30,000 <hr>
-                <span>6-Weeks</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20COMPUTER%20BASICS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>WEBSITE DEVELOPMENT <br><small style="font-size: 14px;">(Vanilla HTML, CSS, & JS)</small></h3> <hr>
-              <p> #70,000 <hr>
-                <span>10-Weeks</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WEBSITE%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
 
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>ADVANCED WEBSITE DEVELOPMENT <br>
-                <small style="font-size: 16px;">(React JS)</small></h3> <hr>
-              <p> #75,000 <hr>
-                <span>3-Months</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20REACT%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>BACK-END WEB DEVELOPMENT</h3> <hr>
-              <p>#100,000 <hr>
-                <span>4 Months</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>COMPUTER <small>PROGRAMMING (PYTHON)</small></h3> <hr>
-              <p>#70,000 <hr>
-                <span>3-Months</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20PROGRAMMING%20USING%20PYTHON.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>MOBILE APP <small>DEVELOPMENT</small></h3> <hr>
-              <p>#200,000 <hr>
-                <span>4-Months</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20MOBILE%20APP%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet">
-              <h3>UI/UX DESIGN</h3> <hr>
-              <p id="website_developer">#80,000 <hr>
-                <span>3-Months</span>
-              </p><hr>
-              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20UI/UX%20DESIGN.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
-              </div>
-            </div>
-  
-            <div class="service-item">
-              <div class="service-item-contenet" style="margin: 0px 3px;">
-                <h3>NEED A WEBSITE?</h3> 
-                <p><small>Yes! Your business surely does!! <hr>
-                  Let us help you shine online!</small>
-                </p>
-                <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Contact Us</a></span>
-                </div>
-            </div>
-        </section>
-      </section>
+        <section class="service-container">
+          <div class="s-card">
+          <h3>JAMB/SSCE TUTORIALS <br> <small style="font-size: 14px;">(Also, PostUTME & Holiday Lessons)</small></h3> <hr>
+          <p id="waec_neco_gce">#11,000 <hr>
+            <span>Per Month</span></p> <hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20Tutorials.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+          </div>
+
+          <div class="s-card">
+          <h3>WAEC GCE Registration</h3> <hr>
+          <p> #33,000 <br> <small style="font-size: 15px;">(Covers PIN & Biometrics)</small>
+            <span><small>NIN is Compulsory</small></span> <br> <small style="font-size: 14px;"> <a href="https://blog.crystallink.org/blog/2024/07/06/waec-gce-2024-2nd-series-registration/" target="_blank">
+              <button class="btn">More Info</button></a> </small></p> <hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+          </div>
+
+          <div class="s-card">
+          <h3>NECO GCE Registration</h3> <hr>
+          <p> #29,500 <br> <small style="font-size: 15px;">(Covers TOKEN & Biometric)</small><hr>
+            <span><small>NIN is Compulsory</small></span></p> <hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20NECO%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: " target="_blank">Register</a></span>
+          </div>
+
+        <div class="s-card">
+          <h3 id="coding_class">COMPUTER APPRECIATION <br> <small style="font-size: 14px;">(OS, Word, Excel & PP)</small></h3> <hr>
+          <p>#30,000 <hr>
+            <span>6-Weeks</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20COMPUTER%20BASICS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+          </div>
+
+        <div class="s-card">
+          <h3>WEBSITE DEVELOPMENT <br><small style="font-size: 14px;">(Vanilla HTML, CSS, & JS)</small></h3> <hr>
+          <p> #70,000 <hr>
+            <span>10-Weeks</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WEBSITE%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+          </div>
+
+        <div class="s-card">
+          <h3>ADVANCED WEBSITE DEVELOPMENT <br>
+            <small style="font-size: 16px;">(React JS)</small></h3> <hr>
+          <p> #75,000 <hr>
+            <span>3-Months</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20REACT%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+        </div>
+
+        <div class="s-card">
+          <h3>BACK-END WEB DEVELOPMENT</h3> <hr>
+          <p>#100,000 <hr>
+            <span>4 Months</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+        </div>
+
+        <div class="s-card">
+          <h3>COMPUTER <small>PROGRAMMING (PYTHON)</small></h3> <hr>
+          <p>#70,000 <hr>
+            <span>3-Months</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20PROGRAMMING%20USING%20PYTHON.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+        </div>
+
+        <div class="s-card">
+          <h3>MOBILE APP <small>DEVELOPMENT</small></h3> <hr>
+          <p>#200,000 <hr>
+            <span>4-Months</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20MOBILE%20APP%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+        </div>
+
+        <div class="s-card">
+          <h3>UI/UX DESIGN</h3> <hr>
+          <p id="website_developer">#80,000 <hr>
+            <span>3-Months</span>
+          </p><hr>
+          <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20UI/UX%20DESIGN.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+        </div>
+
+          <div class="s-card" style="margin: 0px 3px;">
+            <h3>NEED A WEBSITE?</h3> <hr>
+            <p><small>Yes! Your business surely does!!</small></p>
+            <span><hr>
+              Let us help you shine online!</span>
+            <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Contact Us</a></span>
+        </div>
+    </section>
+  </section>
   
     <!-- Blog SECTION-->
 

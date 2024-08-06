@@ -15,7 +15,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: RGB(0, 184, 222);
+    /* background-color: RGB(0, 184, 222); */
+    background-image: conic-gradient(rgba(0, 184, 222),  rgba(0, 46, 110), rgba(0, 184, 222));
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px RGB(0, 46, 110);

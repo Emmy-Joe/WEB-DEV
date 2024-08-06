@@ -1893,7 +1893,7 @@ h1, h2, h3, h4, h5,
     .hero-section-1{
       border-radius: 15px;
       border: 2px dashed #000;
-      backdrop-filter: blur(0px);
+      /* backdrop-filter: blur(0px); */
     }
     @media(max-width: 900px){
       .hero-section-1{
@@ -1911,50 +1911,6 @@ h1, h2, h3, h4, h5,
       border: 2px dashed #000;
       border-radius: 50%;
     }
-
-    .hero-ads{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-      overflow-wrap: break-word;
-    }
-    .hero-ads-item {
-      display: flex;
-      border-radius: 10%;
-      border: 4px double #000;
-      background-color: transparent;
-      background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(245, 245, 245, 0.574), #0d6dfd2a);
-      margin: 10px 0;
-      padding: 10px 5px;
-
-      animation-name: ads;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-    }
-    @keyframes ads{
-      0%{
-        transform: translate(0, 35px);
-      }
-      50%{
-        transform: translate(0, 0)
-      }
-      100%{
-        transform: translate(0, 35px);
-      }
-    }
-
-    .hero-ads-item a{
-      color: #000;
-      text-shadow: 1px 1px 2px #fff;
-      
-    } 
-
-    .hero-ads-item a:hover {
-      cursor: pointer;
-      font-weight: 800;
-  }
   
   .heroBtn:hover {
       cursor: pointer;
@@ -2054,7 +2010,7 @@ h1, h2, h3, h4, h5,
 
 /* SERVICE SECTION */
 
-.service-container{
+service-container{
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
   row-gap: 1em;
@@ -2068,7 +2024,7 @@ h1, h2, h3, h4, h5,
   width: 210px;
   /* border: 4px double #000; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(62, 60, 60, 0.574), #f8f9faf4); */
-  background: linear-gradient(rgba(0, 184, 222), rgba(62, 60, 60, 0.574), #f8f9faf4);
+  /* background: linear-gradient(rgba(0, 184, 222), rgb(62, 60, 60), #f8f9faf4); */
   box-shadow: 3px 3px 6px #000;
 
   animation-name: st;
@@ -2155,9 +2111,3 @@ h1, h2, h3, h4, h5,
   background-color: white;
 }
 
-/* .about-container .about-item:hover{
-  .content{
-    font-family: monospace;
-    font-weight: 700;
-  }
-} */

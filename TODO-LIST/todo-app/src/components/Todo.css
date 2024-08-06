@@ -1,0 +1,49 @@
+
+body{
+    background-color: rgba(129, 129, 183, 0.857);
+    margin: 0;
+    padding: 0;
+}
+
+.todo{
+    background: radial-gradient(white, rgba(255, 255, 255, 0.677), white);
+    height: 80vh;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.todo-add{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.todo-input{
+    width: 80%;
+    border-radius: 15px;
+    height: 2em;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.todo-add-btn{
+    display: inline;
+    margin-left: -40px;
+    padding: 12px 20px;
+    background-color: rgb(129, 129, 183);
+    border: 2px double black;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

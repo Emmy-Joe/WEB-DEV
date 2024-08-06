@@ -1,0 +1,91 @@
+.service-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 1em;
+    margin: 10px;
+    justify-items: center;
+    } 
+
+.s-card{
+    margin: 2px auto; 
+    width: 210px;
+    height: auto;
+    background: linear-gradient(rgba(0, 184, 222), rgb(62, 60, 60), #f8f9faf4);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+}
+
+.s-card::after, .s-card::before{
+    content: '';
+    position: absolute;
+    height: 103%;
+    width: 105%;
+    /* background-image: conic-gradient(red, yellow, green, red); */
+    /* background-image: conic-gradient(red, transparent 60%, blue); */
+    background-image: conic-gradient(from var(--angle), transparent 5%, rgba(0, 184, 222), white, rgba(0, 184, 222)); 
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10%;
+    animation: 3s borderAnimate linear infinite;
+}
+@keyframes borderAnimate{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.s-card::before{
+    filter: blur(1.5em);
+    opacity: 0.2;
+}
+
+
+.s-card{
+border-radius: 10%;
+/* border: 2px double rgba(0, 184, 222); */
+height: auto;
+width: 210px;
+box-shadow: 3px 3px 6px #000;
+}
+.s-card h3{
+color: #fff;
+text-shadow: 1px 1px 2px#212529;
+padding: 2px;
+margin-top: 5px;
+}
+
+.s-card p{
+color: rgb(247, 227, 227);
+text-shadow: 1px 1px 2px black;
+}
+
+.s-card span{
+    color: #000;
+}
+
+.s-card a{
+color: white;
+padding: 1px 8px;
+border: 2px ridge white;
+border-radius: 10px;
+background-color: rgb(0, 185, 222);
+}
+
+.s-card:hover{
+font-weight: 900;
+width: calc(100% + 1px);   
+/* height: calc(100% + 5px);  Increases height by 10px */ 
+}

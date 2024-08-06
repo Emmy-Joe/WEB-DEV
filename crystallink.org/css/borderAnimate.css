@@ -1,0 +1,84 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+}
+
+.card{
+    background: linear-gradient(rgba(0, 0, 0, 0.499), rgba(245, 245, 245, 0.983), #0d6dfd2a);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 105%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgba(0, 184, 222),  rgba(0, 46, 110, 0.777), rgba(0, 184, 222)); 
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 8s borderAnimate linear infinite;
+}
+@keyframes borderAnimate{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.card::before{
+    filter: blur(1.7em);
+    opacity: 0.2;
+}
+
+.card-item {
+    display: flex;
+    border-radius: 10%;   
+    border: 4px double #000;
+    margin: 10px 0;
+    padding: 10px 5px;
+
+    animation-name: ads;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    @keyframes ads{
+    0%{
+        transform: translate(0, 35px);
+    }
+    50%{
+        transform: translate(0, 0)
+    }
+    100%{
+        transform: translate(0, 35px);
+    }
+    }
+
+.card-item a{
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
+    
+    } 
+
+.card-item a:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
