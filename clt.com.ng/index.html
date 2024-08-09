@@ -45,9 +45,9 @@
       <!--CUSTOM ALERT-->
       <div id="custom-alert-overlay">
         <div id="custom-alert">
-          <div id="custom-alert-content">
-            <h1 id="custom-alert-title">2024 WAEC GCE</h1>
-            <p id="custom-alert-message"></p>
+          <div id="custom-alert-content" class="custume-alert">
+            <h1 id="custom-alert-title">2024 WAEC & NECO GCE</h1>
+            <p id="custom-alert-message"></p> 
 
             <a href="#waec_neco_gce">
               <button class="btn" onclick="hideCustomAlert()">Details</button></a>
@@ -56,21 +56,26 @@
             <button class="btn" >WhatsApp </button> </a>
     
             <a href="tel://+234 806 720 7668">
-            <button class="btn">Call Us</button></a>
-    
-            <button class="btn" onclick="hideCustomAlert()">Close</button>
+            <button class="btn">Call Us</button></a> <br>
+            
           </div>
         </div>
+        <div id="closeBtn" onclick="hideCustomAlert()">X</div>
       </div>
-     
-       <script>
+    
+     <script>
         window.onload = ()=>{
-          setTimeout(showCustomAlert, 7000);
+          setTimeout(showCustomAlert, 6000);
         }
-      </script>
-      
-      <!--Custom Alert Ends-->
 
+        window.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('custom-alert-overlay');
+        if (sidebar.style.display === 'block' && !event.target.closest('.custume-alert')){
+          hideCustomAlert();
+        }
+      });
+    </script>     
+      <!--Custom Alert Ends-->
 
   <!-- side call button -->
   <button id="sideCall" class="sideBtn rotate"><a href="tel://+234 806 720 7668"><span class="text-primary icon-phone2"> </span></a></button>
@@ -242,7 +247,7 @@
   
             <div class="service-item">
               <div class="service-item-contenet">
-              <h3>WAEC GCE Registration</h3> <hr>
+              <h3>WAEC GCE REGISTRATION</h3> <hr>
               <p> #33,000 <br> <small style="font-size: 15px;">(Covers PIN & Biometrics)</small>
                 <small>NIN is Compulsory</small> <small><a style="font-size: 14px; color: #fff; padding: 1px;" href="https://blog.crystallink.org/blog/2024/07/06/waec-gce-2024-2nd-series-registration/" target="_blank">
                   More Info</a></small></p> <hr>
@@ -252,9 +257,9 @@
   
             <div class="service-item">
               <div class="service-item-contenet">
-              <h3>NECO GCE Registration</h3> <hr>
+              <h3>NECO GCE REGISTRATION</h3> <hr>
               <p> #29,500 <br> <small style="font-size: 15px;">(Covers TOKEN & Biometric)</small><hr>
-                <small>NIN is Compulsory</small></p> <hr>
+                <small class="dark">NIN is Compulsory</small></p> <hr>
               <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20NECO%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: " target="_blank">Register</a></span>
               </div>
             </div>
@@ -333,8 +338,8 @@
             <div class="service-item">
               <div class="service-item-contenet" style="margin: 0px 3px;">
                 <h3>NEED A WEBSITE?</h3> 
-                <p><small>Yes! Your business surely does!! <hr>
-                  Let us help you shine online!</small>
+                <p><small>Yes! Your business surely does!!</small> <hr>
+                  <small class="dark"> Let us help you shine online!</small>
                 </p>
                 <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Contact Us</a></span>
                 </div>

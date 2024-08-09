@@ -10,7 +10,9 @@
     margin: 2px auto; 
     width: 210px;
     height: auto;
-    background: linear-gradient(rgba(0, 184, 222), rgb(62, 60, 60), #f8f9faf4);
+    /* background: linear-gradient(rgba(0, 184, 222), rgb(62, 60, 60), #f8f9faf4); */
+    /* background: conic-gradient(rgba(0, 46, 110),  white,rgba(0, 46, 110) ); */
+    background-image: conic-gradient(rgba(0, 46, 110), rgba(0, 184, 222), white, rgba(0, 184, 222), rgba(0, 46, 110));
     text-align: center;
     border-radius: 10px;
     position: relative;
@@ -26,17 +28,16 @@
     content: '';
     position: absolute;
     height: 103%;
-    width: 105%;
+    width: 110%;
     /* background-image: conic-gradient(red, yellow, green, red); */
-    /* background-image: conic-gradient(red, transparent 60%, blue); */
-    background-image: conic-gradient(from var(--angle), transparent 5%, rgba(0, 184, 222), white, rgba(0, 184, 222)); 
+    background-image: conic-gradient(from var(--angle), transparent 10%, rgba(0, 184, 222)); 
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 3px;
     border-radius: 10%;
-    animation: 3s borderAnimate linear infinite;
+    animation: 10s borderAnimate linear infinite;
 }
 @keyframes borderAnimate{
     from{
@@ -48,14 +49,14 @@
 }
 
 .s-card::before{
-    filter: blur(1.5em);
+    filter: blur(1.2em);
     opacity: 0.2;
 }
 
 
 .s-card{
 border-radius: 10%;
-/* border: 2px double rgba(0, 184, 222); */
+/* border: 2px double rgba(0, 46, 110);  */
 height: auto;
 width: 210px;
 box-shadow: 3px 3px 6px #000;
@@ -73,7 +74,7 @@ text-shadow: 1px 1px 2px black;
 }
 
 .s-card span{
-    color: #000;
+    color: rgba(0, 46, 110);
 }
 
 .s-card a{

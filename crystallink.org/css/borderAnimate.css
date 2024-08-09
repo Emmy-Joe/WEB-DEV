@@ -23,9 +23,9 @@
 .card::after, .card::before{
     content: '';
     position: absolute;
-    height: 105%;
-    width: 105%;
-    background-image: conic-gradient(from var(--angle), transparent 50%, rgba(0, 184, 222),  rgba(0, 46, 110, 0.777), rgba(0, 184, 222)); 
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgba(0, 185, 222, 0.589), white, rgba(0, 46, 110, 0.726),  white,rgb(0, 185, 222)); 
     top: 50%;
     left: 50%;
     translate: -50% -50%;
